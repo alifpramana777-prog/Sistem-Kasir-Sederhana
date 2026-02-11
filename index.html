@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Berkah Jaya Kasir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stye.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 7V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V7M3 7V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V7M3 7H21M12 11V17M9 14H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h1>Toko Berkah Jaya</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="products" class="section">
+            <h2>Daftar Produk</h2>
+            <div class="product-grid">
+                <div class="product-card" data-id="1" data-name="Beras Premium" data-price="50000">
+                    <h3>Beras Premium | 4KG</h3>
+                    <p>Rp 50.000</p>
+                    <button class="btn add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-card" data-id="2" data-name="Gula Pasir" data-price="15000">
+                    <h3>Gula Pasir | 1KG</h3>
+                    <p>Rp 15.000</p>
+                    <button class="btn add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-card" data-id="3" data-name="Minyak Goreng" data-price="25000">
+                    <h3>Minyak Goreng | 1Lt</h3>
+                    <p>Rp 25.000</p>
+                    <button class="btn add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-card" data-id="4" data-name="Tepung Terigu" data-price="12000">
+                    <h3>Tepung Terigu | 1KG</h3>
+                    <p>Rp 12.000</p>
+                    <button class="btn add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-card" data-id="5" data-name="Kopi Sachet" data-price="15000">
+                    <h3>Kopi Sachet</h3>
+                    <p>Rp 15.000</p>
+                    <button class="btn add-to-cart">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-card" data-id="6" data-name="Susu Kental Manis" data-price="18000">
+                    <h3>Susu Kental Manis</h3>
+                    <p>Rp 18.000</p>
+                    <button class="btn add-to-cart">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="section">
+            <h2>Keranjang Belanja</h2>
+            <div class="cart-list">
+                <!-- Items will be added here -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="total-price">Rp 0</span></p>
+            </div>
+        </section>
+
+        <section id="payment" class="section">
+            <h2>Pembayaran</h2>
+            <form id="payment-form">
+                <label for="cash-input">Masukan Nominal Uang:</label>
+                <input type="number" id="cash-input" placeholder="Masukkan jumlah uang" min="0" required>
+                <button type="submit" class="btn pay-btn">Bayar</button>
+            </form>
+            <div id="change-display" class="change-display"></div>
+        </section>
+    </main>
+
+    <div id="notification" class="notification">
+        <p id="notification-text"></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+(HTML)
